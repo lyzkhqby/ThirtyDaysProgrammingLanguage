@@ -3,6 +3,8 @@
  */
 public abstract class Token {
     private int lineNumber;
+    public static final Token EOF = new Token(-1) {};
+    public static final String EOL = "\\n";
 
     protected Token(int line) {
         lineNumber = line;
